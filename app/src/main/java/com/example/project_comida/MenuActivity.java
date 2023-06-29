@@ -3,6 +3,7 @@ package com.example.project_comida;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 
 import com.example.project_comida.databinding.ActivityMainBinding;
@@ -20,6 +21,16 @@ public class MenuActivity extends AppCompatActivity {
         binding = ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         initList();
+        initBack();
+    }
+
+    private void initBack() {
+        binding.buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     private void initList() {

@@ -11,10 +11,13 @@
         android:id="@+id/buttonPedir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:backgroundTint="#6B9E30"
+        android:padding="20dp"
+        android:text="Pedir Comida"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.86" />
 </androidx.constraintlayout.widget.ConstraintLayout>
