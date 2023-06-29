@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MapActivity extends AppCompatActivity {
+import com.example.project_comida.databinding.ActivityMapBinding;
+import com.example.project_comida.databinding.ActivityMenuBinding;
 
+public class MapActivity extends AppCompatActivity {
+    private ActivityMapBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        binding = ActivityMapBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }
